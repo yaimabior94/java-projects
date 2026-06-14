@@ -1,3 +1,4 @@
+library.db
 database/*.db
 lib/*.jar
 *.class
