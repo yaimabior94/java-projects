@@ -1,0 +1,22 @@
+# Maven build output
+backend/target/
+backend/*.log
+backend/replay_pid*.log
+replay_pid*.log
+hs_err_pid*.log
+
+# Node dependencies and build output
+frontend/node_modules/
+frontend/dist/
+frontend/.eslintcache
+
+# IDE and OS files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db

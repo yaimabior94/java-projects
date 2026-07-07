@@ -1,0 +1,443 @@
+/* Chart Container Styles */
+.chart-container {
+  background-color: var(--bg-secondary);
+  border: 1px solid rgba(71, 85, 105, 0.3);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.chart-container:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  border-color: rgba(71, 85, 105, 0.5);
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(71, 85, 105, 0.2);
+}
+
+.chart-header h3 {
+  color: var(--text-primary);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.chart-header .chart-period {
+  color: var(--text-secondary);
+  font-size: 12px;
+  background-color: var(--bg-tertiary);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+/* Sales Bar Chart */
+.sales-bar-chart {
+  background-color: var(--bg-secondary);
+  border: 1px solid rgba(71, 85, 105, 0.3);
+  border-radius: 8px;
+  padding: 20px;
+  height: 300px;
+}
+
+/* Purchases Line Chart */
+.purchases-line-chart {
+  background-color: var(--bg-secondary);
+  border: 1px solid rgba(71, 85, 105, 0.3);
+  border-radius: 8px;
+  padding: 20px;
+  height: 300px;
+}
+
+/* Categories Pie Chart */
+.categories-pie-chart {
+  background-color: var(--bg-secondary);
+  border: 1px solid rgba(71, 85, 105, 0.3);
+  border-radius: 8px;
+  padding: 20px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===================== LOW STOCK WIDGET ===================== */
+.low-stock-widget {
+  background-color: var(--bg-secondary);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.low-stock-widget .widget-header {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(245, 158, 11, 0.1));
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(71, 85, 105, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.low-stock-widget .widget-header h3 {
+  color: var(--text-primary);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.low-stock-widget .alert-count {
+  background-color: #ef4444;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  min-width: 24px;
+  text-align: center;
+}
+
+.low-stock-widget .widget-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 0;
+}
+
+.low-stock-widget .no-data {
+  color: var(--text-tertiary);
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+.low-stock-widget .stock-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.low-stock-widget .stock-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(71, 85, 105, 0.2);
+  transition: background-color 0.2s ease;
+}
+
+.low-stock-widget .stock-item:hover {
+  background-color: rgba(239, 68, 68, 0.05);
+}
+
+.low-stock-widget .stock-item:last-child {
+  border-bottom: none;
+}
+
+.low-stock-widget .item-info {
+  flex: 1;
+}
+
+.low-stock-widget .item-name {
+  color: var(--text-primary);
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.low-stock-widget .item-sku {
+  color: var(--text-tertiary);
+  font-size: 11px;
+  margin: 0;
+}
+
+.low-stock-widget .item-stock {
+  display: flex;
+  gap: 16px;
+  font-size: 11px;
+}
+
+.low-stock-widget .item-stock .current {
+  color: var(--text-secondary);
+}
+
+.low-stock-widget .item-stock .current strong {
+  color: #ef4444;
+  font-weight: 700;
+}
+
+.low-stock-widget .item-stock .reorder {
+  color: var(--text-secondary);
+}
+
+.low-stock-widget .item-stock .reorder strong {
+  color: #f59e0b;
+  font-weight: 700;
+}
+
+.low-stock-widget .widget-footer {
+  padding: 12px 16px;
+  border-top: 1px solid rgba(71, 85, 105, 0.3);
+  background-color: rgba(239, 68, 68, 0.05);
+}
+
+.low-stock-widget .btn-view-all {
+  width: 100%;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.low-stock-widget .btn-view-all:hover {
+  background-color: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+}
+
+/* ===================== MONTHLY REVENUE CARD ===================== */
+.revenue-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.revenue-card .card-header {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(6, 182, 212, 0.1));
+  padding: 20px;
+  border-bottom: 1px solid rgba(71, 85, 105, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.revenue-card .title-section {
+  flex: 1;
+}
+
+.revenue-card .title-section h3 {
+  color: var(--text-primary);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.revenue-card .month-label {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.revenue-card .trend-indicator {
+  font-size: 24px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.revenue-card .card-body {
+  padding: 24px 20px;
+  flex: 1;
+}
+
+.revenue-card .revenue-display {
+  margin-bottom: 24px;
+}
+
+.revenue-card .revenue-display .label {
+  color: var(--text-secondary);
+  font-size: 12px;
+  display: block;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.revenue-card .revenue-display h2 {
+  color: var(--text-primary);
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.revenue-card .comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.revenue-card .comparison-item {
+  background-color: var(--bg-tertiary);
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.revenue-card .comparison-item .comp-label {
+  color: var(--text-secondary);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.revenue-card .comparison-item .comp-value {
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.revenue-card .comparison-item.trend.positive .comp-value {
+  color: #10b981;
+}
+
+.revenue-card .comparison-item.trend.negative .comp-value {
+  color: #ef4444;
+}
+
+.revenue-card .progress-bar {
+  background-color: var(--bg-tertiary);
+  height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.revenue-card .progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  border-radius: 3px;
+  transition: width 0.6s ease;
+}
+
+.revenue-card .card-footer {
+  padding: 12px 20px;
+  border-top: 1px solid rgba(71, 85, 105, 0.3);
+  background-color: rgba(59, 130, 246, 0.05);
+}
+
+.revenue-card .btn-detail {
+  width: 100%;
+  background-color: transparent;
+  color: #3b82f6;
+  border: 1px solid #3b82f6;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.revenue-card .btn-detail:hover {
+  background-color: #3b82f6;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+/* ===================== RESPONSIVE DESIGN ===================== */
+@media (max-width: 768px) {
+  .chart-container {
+    padding: 16px;
+  }
+
+  .chart-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .sales-bar-chart,
+  .purchases-line-chart,
+  .categories-pie-chart {
+    height: 250px;
+    padding: 16px;
+  }
+
+  .low-stock-widget .stock-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .low-stock-widget .item-stock {
+    width: 100%;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .revenue-card .revenue-display h2 {
+    font-size: 24px;
+  }
+
+  .revenue-card .comparison {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===================== ANIMATION ===================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chart-container,
+.low-stock-widget,
+.revenue-card {
+  animation: fadeIn 0.3s ease;
+}
+
+/* ===================== SCROLLBAR STYLING ===================== */
+.low-stock-widget .widget-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.low-stock-widget .widget-content::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.low-stock-widget .widget-content::-webkit-scrollbar-thumb {
+  background-color: rgba(71, 85, 105, 0.5);
+  border-radius: 3px;
+}
+
+.low-stock-widget .widget-content::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(71, 85, 105, 0.7);
+}
